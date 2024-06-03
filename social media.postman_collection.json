@@ -1,0 +1,1385 @@
+{
+	"info": {
+		"_postman_id": "04a06ae4-5858-4062-98ce-386f80b982cb",
+		"name": "social media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7766980",
+		"_collection_link": "https://www.postman.com/crimson-station-99563/workspace/zeroite/collection/7766980-04a06ae4-5858-4062-98ce-386f80b982cb?action=share&source=collection_link&creator=7766980"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"superuser@test.com\",\n\t\"password\" : \"1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/login/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"superuser@test.com\",\n    \"password\" : \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/login/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 10:57:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "158"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"token\": \"426c10cce2fab6bdce0f4325087f9239912fdae8\",\n        \"user\": {\n            \"email\": \"superuser@test.com\"\n        }\n    },\n    \"message\": \"User logged in successfully\",\n    \"status\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\" : \"test992s@test.com\",\n    \"password\" : \"1234\",\n    \"first_name\" : \"test 99\",\n    \"last_name\" : \"last name\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/signup/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"signup",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "singup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"test992s@test.com\",\n    \"password\" : \"1234\",\n    \"first_name\" : \"test 99\",\n    \"last_name\" : \"last name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/signup/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"signup",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:09:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "182"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"token\": \"6ee566f0eab82b7a01ee4bd4b1c3f97b7d0bf26c\",\n        \"user\": {\n            \"email\": \"test992s@test.com\",\n            \"name\": \"test 99 last name\"\n        }\n    },\n    \"message\": \"User created successfully\",\n    \"status\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Friend Request Send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \n    \"from_user\" : \"1\",\n    \"to_user\" : \"2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/friend-request/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"friend-request",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Friend request send success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"from_user\" : \"1\",\n    \"to_user\" : \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/friend-request/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"friend-request",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:13:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, PUT, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"from_user\": 1,\n    \"to_user\": 2\n}"
+				},
+				{
+					"name": "Already send friend request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"from_user\" : \"1\",\n    \"to_user\" : \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/friend-request/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"friend-request",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:14:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, PUT, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"non_field_errors\": [\n        \"A friend request already exists.\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Friend Request Accept reject",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\" : \"accepted\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8000/friend-request/1/",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"friend-request",
+						"1",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Friend Request accept",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : \"accepted\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/friend-request/1/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"friend-request",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:26:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"status\": \"accepted\"\n}"
+				},
+				{
+					"name": "Friend Request already updated",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : \"accepted\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/friend-request/1/",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"friend-request",
+								"1",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:28:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "58"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"non_field_errors\": [\n        \"Friend request can not be updated\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Search friend",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://0.0.0.0:8000/list-friends?status=accepted",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"list-friends"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "accepted"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "accept",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/list-friends?status=accepted",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"list-friends"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "accepted"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:33:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "163"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"from_user\": {\n                \"id\": 1\n            },\n            \"to_user\": {\n                \"id\": 2\n            },\n            \"status\": \"accepted\",\n            \"created_at\": \"2024-06-03T11:13:57.030152Z\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Search User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://0.0.0.0:8000/user-search?search=test",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"user-search"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "accept",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/list-friends?status=accepted",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"list-friends"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "accepted"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:33:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "163"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"from_user\": {\n                \"id\": 1\n            },\n            \"to_user\": {\n                \"id\": 2\n            },\n            \"status\": \"accepted\",\n            \"created_at\": \"2024-06-03T11:13:57.030152Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "search with email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user-search?search=test0@test.com",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user-search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test0@test.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:35:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 2,\n            \"email\": \"test0@test.com\",\n            \"first_name\": \"test 0 first\",\n            \"last_name\": \"test 0 last\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "search by name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user-search?search=test",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user-search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:35:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "984"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 27,\n    \"next\": \"http://0.0.0.0:8000/user-search/?page=2&search=test+\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 2,\n            \"email\": \"test0@test.com\",\n            \"first_name\": \"test 0 first\",\n            \"last_name\": \"test 0 last\"\n        },\n        {\n            \"id\": 3,\n            \"email\": \"test1@test.com\",\n            \"first_name\": \"test 1 first\",\n            \"last_name\": \"test 1 last\"\n        },\n        {\n            \"id\": 4,\n            \"email\": \"test2@test.com\",\n            \"first_name\": \"test 2 first\",\n            \"last_name\": \"test 2 last\"\n        },\n        {\n            \"id\": 5,\n            \"email\": \"test3@test.com\",\n            \"first_name\": \"test 3 first\",\n            \"last_name\": \"test 3 last\"\n        },\n        {\n            \"id\": 6,\n            \"email\": \"test4@test.com\",\n            \"first_name\": \"test 4 first\",\n            \"last_name\": \"test 4 last\"\n        },\n        {\n            \"id\": 7,\n            \"email\": \"test5@test.com\",\n            \"first_name\": \"test 5 first\",\n            \"last_name\": \"test 5 last\"\n        },\n        {\n            \"id\": 8,\n            \"email\": \"test6@test.com\",\n            \"first_name\": \"test 6 first\",\n            \"last_name\": \"test 6 last\"\n        },\n        {\n            \"id\": 9,\n            \"email\": \"test7@test.com\",\n            \"first_name\": \"test 7 first\",\n            \"last_name\": \"test 7 last\"\n        },\n        {\n            \"id\": 10,\n            \"email\": \"test8@test.com\",\n            \"first_name\": \"test 8 first\",\n            \"last_name\": \"test 8 last\"\n        },\n        {\n            \"id\": 11,\n            \"email\": \"test9@test.com\",\n            \"first_name\": \"test 9 first\",\n            \"last_name\": \"test 9 last\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Throttling",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+					}
+				],
+				"url": {
+					"raw": "http://0.0.0.0:8000/user-search?search=test",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"user-search"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "accept",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/list-friends?status=accepted",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"list-friends"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "accepted"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:33:32 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "163"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"from_user\": {\n                \"id\": 1\n            },\n            \"to_user\": {\n                \"id\": 2\n            },\n            \"status\": \"accepted\",\n            \"created_at\": \"2024-06-03T11:13:57.030152Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "search with email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user-search?search=test0@test.com",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user-search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test0@test.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:35:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "139"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 2,\n            \"email\": \"test0@test.com\",\n            \"first_name\": \"test 0 first\",\n            \"last_name\": \"test 0 last\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "search by name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user-search?search=test",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user-search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:35:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "984"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 27,\n    \"next\": \"http://0.0.0.0:8000/user-search/?page=2&search=test+\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 2,\n            \"email\": \"test0@test.com\",\n            \"first_name\": \"test 0 first\",\n            \"last_name\": \"test 0 last\"\n        },\n        {\n            \"id\": 3,\n            \"email\": \"test1@test.com\",\n            \"first_name\": \"test 1 first\",\n            \"last_name\": \"test 1 last\"\n        },\n        {\n            \"id\": 4,\n            \"email\": \"test2@test.com\",\n            \"first_name\": \"test 2 first\",\n            \"last_name\": \"test 2 last\"\n        },\n        {\n            \"id\": 5,\n            \"email\": \"test3@test.com\",\n            \"first_name\": \"test 3 first\",\n            \"last_name\": \"test 3 last\"\n        },\n        {\n            \"id\": 6,\n            \"email\": \"test4@test.com\",\n            \"first_name\": \"test 4 first\",\n            \"last_name\": \"test 4 last\"\n        },\n        {\n            \"id\": 7,\n            \"email\": \"test5@test.com\",\n            \"first_name\": \"test 5 first\",\n            \"last_name\": \"test 5 last\"\n        },\n        {\n            \"id\": 8,\n            \"email\": \"test6@test.com\",\n            \"first_name\": \"test 6 first\",\n            \"last_name\": \"test 6 last\"\n        },\n        {\n            \"id\": 9,\n            \"email\": \"test7@test.com\",\n            \"first_name\": \"test 7 first\",\n            \"last_name\": \"test 7 last\"\n        },\n        {\n            \"id\": 10,\n            \"email\": \"test8@test.com\",\n            \"first_name\": \"test 8 first\",\n            \"last_name\": \"test 8 last\"\n        },\n        {\n            \"id\": 11,\n            \"email\": \"test9@test.com\",\n            \"first_name\": \"test 9 first\",\n            \"last_name\": \"test 9 last\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Throttling 3 reqeust/seconds",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9f2a2b9ecc41f3e2f2bf4381d24a139bab533191"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:8000/user-search?search=test",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"user-search"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"status": "Too Many Requests",
+					"code": 429,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jun 2024 11:48:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.9"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Retry-After",
+							"value": "58"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Request was throttled. Expected available in 58 seconds.\"\n}"
+				}
+			]
+		}
+	]
+}
